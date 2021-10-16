@@ -5,7 +5,7 @@
 <style>
 canvas {
     border: 1px solid #d3d3d3;
-    background-color: #ffffff;
+    background-color: #142557;
 }
 </style>
 </head>
@@ -21,7 +21,7 @@ var myGameArea = {
     start : function() {
         this.canvas.width = 215;
         this.canvas.height = 360;
-        this.canvas.position = (10,50);
+        this.canvas.position(10,50);
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     }
