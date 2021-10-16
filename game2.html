@@ -5,15 +5,20 @@
 <style>
 canvas {
     border: 1px solid #d3d3d3;
-    background-color: #142557;
+    background-color: #cca300;
 }
 </style>
 </head>
 <body onload="startGame()">
 <script>
+    
+var myGamePiece;
+var myObstacle;
 
 function startGame() {
     myGameArea.start();
+    myGamePiece = new component(40, 60, "red", 15, 120);
+    myObstacle = new component(10, 200, "green", 300, 120;
 }
 
 var myGameArea = {
@@ -24,8 +29,11 @@ var myGameArea = {
         this.canvas.position(10,50);
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
     }
 }
+
+
 
 </script>
 
